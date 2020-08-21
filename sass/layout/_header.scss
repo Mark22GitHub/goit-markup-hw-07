@@ -12,7 +12,7 @@
   }
 }
 
-/* site-nav */
+/* Site-nav */
 
 .navigation {
   display: flex;
@@ -22,12 +22,12 @@
   display: flex;
   align-items: center;
 
-  > .item:not(:last-child) {
+  .item:not(:last-child) {
     margin-right: 50px;
   }
 
   .link {
-    color: var(--title-text-color);
+    color: $title-text-color;
 
     font-weight: 500;
     font-size: 14px;
@@ -41,12 +41,12 @@
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
 
   .link.current {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -68,43 +68,40 @@
   }
 }
 
-Начать с  ИНФОРМАЦИИ
+/* Information */
 
-/* information */
 .contacts {
   display: inline-flex;
   align-items: center;
 
   margin-left: auto;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+
+  & .item {
+    display: flex;
+    align-items: center;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts-link {
   display: flex;
   align-items: center;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
-  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--accent-color);
-}
-
-.contacts.item {
-  display: flex;
-  align-items: center;
-}
-
-.contacts > .item:not(:last-child) {
-  margin-right: 50px;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .envelope-svg {
@@ -113,7 +110,7 @@
   height: 12px;
   margin-right: 10px;
   align-items: center;
-  fill: var(--primary-text-color);
+  fill: $primary-text-color;
   cursor: pointer;
 }
 
@@ -123,7 +120,7 @@
   height: 16px;
   margin-right: 10px;
   align-items: center;
-  fill: var(--primary-text-color);
+  fill: $primary-text-color;
   cursor: pointer;
 }
 

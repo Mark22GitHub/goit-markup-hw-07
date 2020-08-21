@@ -22,18 +22,18 @@
 
   &:hover,
   &:focus {
-    background: var(--accent-color);
+    background: $accent-color;
     outline: none;
   }
 }
 
 .social-list-item-link-svg {
-  fill: var(--social-links-color);
+  fill: $social-links-color;
   width: 20px;
   height: 20px;
 
   .social-list-item-link:hover & {
-    fill: var(--button-text-color);
+    fill: $button-text-color;
   }
 }
 

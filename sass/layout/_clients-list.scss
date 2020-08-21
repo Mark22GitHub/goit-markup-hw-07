@@ -1,4 +1,4 @@
-/* Постоянные клиенты */
+/* -------Постоянные клиенты-------- */
 
 .clients .section-title {
   margin-bottom: 50px;
@@ -21,12 +21,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--social-links-color);
+  color: $social-links-color;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
     outline: none;
   }
 }

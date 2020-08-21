@@ -11,7 +11,7 @@
     width: 370px;
   }
 
-  &.item:not(:last-child) {
+  & .item:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -27,7 +27,7 @@
 
   top: 226px;
 
-  color: var(--white);
+  color: $white;
 
   background-color: rgba(47, 48, 58, 0.8);
 
